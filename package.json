@@ -1,6 +1,6 @@
 {
   "name": "gulp-fabricator",
-  "version": "0.1.0",
+  "version": "0.1.0-Alpha",
   "description": "A plugin for Gulp to generate UI documentation with DSS Parser into gulp-fabricator",
   "main": "index.js",
   "dependencies": {
