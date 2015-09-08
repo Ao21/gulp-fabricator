@@ -1,6 +1,6 @@
 {
   "name": "gulp-fabricator",
-  "version": "0.0.1-alpha",
+  "version": "0.1.0-Alpha",
   "description": "A plugin for Gulp to generate UI documentation with DSS Parser into gulp-fabricator",
   "main": "index.js",
   "dependencies": {
@@ -13,5 +13,12 @@
   "scripts": {
     "test": "mocha"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "gitHead": "562e36b94b7206fdd44fcd2e69c3e00b72509fec",
+  "readme": "# gulp-dss\r\n\r\nA plugin for Gulp to generate UI documentation with DSS Parser.\r\n\r\n## Basic Usage\r\n\r\n```javascript\r\nvar dss = require('gulp-dss');\r\n\r\ngulp.task('dss', function() {\r\n  return gulp.src('app/assets/stylesheets/**/*.{sass,scss}')\r\n    .pipe(dss({\r\n      output: 'index.html',\r\n      templatePath: path.join(__dirname, 'templates')\r\n    }))\r\n    .pipe(gulp.dest('ui-docs/'));\r\n});\r\n```\r\n\r\n## Templates\r\n\r\nThe **templatePath** option points to the folder containing the templates.\r\n\r\nYou *should* create your own `module.html` and `base.html`, but there are some default ones provided.\r\n\r\nThe `module.html` template is rendered with the Generated Object from [DSS](https://github.com/darcyclarke/DSS).\r\n\r\nThe `base.html` template is rendered the `content`.\r\n\r\nThe template engine used is [Nunjucks](http://mozilla.github.io/nunjucks/).\r\n\r\n## Roadmap\r\n\r\n- Write better readme\r\n- Provide better default templates that automatically include the stylesheets\r\n\r\n",
+  "readmeFilename": "README.md",
+  "_id": "gulp-fabricator@0.1.0-Alpha",
+  "_shasum": "6128870dbd21490df0882be70234bb765981ff2a",
+  "_from": "git+https://github.com/Ao21/gulp-fabricator.git",
+  "_resolved": "git+https://github.com/Ao21/gulp-fabricator.git#562e36b94b7206fdd44fcd2e69c3e00b72509fec"
 }
